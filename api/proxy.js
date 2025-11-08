@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const targetUrl = req.query.url;
-
+ const host = req.query.host;
   if (!targetUrl) {
     return res.status(400).json({ error: "Missing 'url' query parameter" });
   }
@@ -10,7 +10,7 @@ export default async function handler(req, res) {
       method: 'GET',
       headers: {
         'X-Rapidapi-Key': '26d6bc2669msh34bc749da31f3a5p10fb9ajsnbbbf46a26c5d',
-        'X-Rapidapi-Host': 'instagram-social-api.p.rapidapi.com',
+        'X-Rapidapi-Host': host,
       },
     });
 
