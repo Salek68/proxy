@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     const response = await fetch(targetUrl, {
       method: 'GET',
       headers: {
-        'X-Rapidapi-Key': '26d6bc2669msh34bc749da31f3a5p10fb9ajsnbbbf46a26c5d',
+        'X-Rapidapi-Key': 'e02952a494msh109bdfd6e212e51p10efdfjsn89f4dd0e5542',
         'X-Rapidapi-Host': host,
       },
     });
